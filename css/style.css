@@ -1,0 +1,10 @@
+:root{
+    --mainColor: #09c;
+}
+body{
+    background-color: #999;
+}
+
+h3{
+    background-color: #09c;
+}

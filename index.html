@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript CRUD Project</title>
+    <link href="assets/javascript.ico" rel="icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <div class="w-75 py-5 mx-auto">
+        <label for="productName">Product Name</label>
+        <input type="text" class="form-control my-2" name="" id="productName">
+
+        <label for="productPrice">Product Price</label>
+        <input type="number" class="form-control my-2" name="" id="productPrice">
+
+        <label for="productCategory">Product Category</label>
+        <input type="text" class="form-control my-2" name="" id="productCategory">
+
+        <label for="productDescription">Product Description</label>
+        <textarea  class="form-control my-2" name="" id="productDescription" cols="30" rows="10"></textarea>
+
+        <button id="btn" class="btn btn-info">Add Product</button>
+
+    </div>
+
+
+    <div class="w-75 py-3 mx-auto">
+        <div class="w-75 mx-auto py-4">
+            <label for="searchInput">Search ...</label>
+            <input onkeyup="searchProduct(this.value)" type="text" class="form-control" name="" id="searchInput">
+        </div>
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Product Price</th>
+                    <th scope="col">Product Category</th>
+                    <th scope="col">Product Description</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-dark py-5 text-white">
+        <h3>web design & development</h3>
+        <h3>web design & development</h3>
+        <h3>web design & development</h3>
+        <h3>web design & development</h3>
+        <h3>web design & development</h3>
+        <h3>web design & development</h3>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
